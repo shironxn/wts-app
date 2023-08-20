@@ -41,13 +41,10 @@ class WeatherApp {
 }
 
 const main = async () => {
-  const anime = fs.readFileSync("./src/utils/anime.txt", "utf-8");
+  console.log(fs.readFileSync("./src/utils/anime.txt", "utf-8"));
 
   const prompt = promptSync();
-  const city: string = prompt(`
-${anime}
-
-[>] Your City: `);
+  const city: string = prompt("[>] Your City: ");
   const weatherApp = new WeatherApp(city);
 
   try {
