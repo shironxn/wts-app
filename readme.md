@@ -12,7 +12,7 @@ This project is the result of my exercise in learning Typescript Object-Oriented
 
 ## Usage
 
-1. Duplicate the `.env.example` file and rename it to `.env`.
+1. Rename file `.env.example` to `.env`.
 2. Fill in the `API_KEY` with your [OpenWeatherMap API key](https://openweathermap.org/api) inside the `.env` file.
 3. Build the Typescript code: `npm run build`.
 4. Run the built code: `npm start`.
