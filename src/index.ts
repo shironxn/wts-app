@@ -5,6 +5,7 @@ import logger from "./utils/logger.util";
 import promptSync from "prompt-sync";
 import WeatherData from "./utils/interface";
 import fs from "fs";
+import clear from "console-clear"
 
 class WeatherApp {
   constructor(private city: string) {}
@@ -41,6 +42,7 @@ class WeatherApp {
 }
 
 const main = async () => {
+  clear()
   console.log(fs.readFileSync("./src/utils/anime.txt", "utf-8"));
 
   const prompt = promptSync();
